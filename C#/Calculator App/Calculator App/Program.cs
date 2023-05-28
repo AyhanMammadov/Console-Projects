@@ -1,5 +1,7 @@
 ﻿using Calculator_App;
-while (true)
+
+bool isover = true;
+while (isover)
 {
     try
     {
@@ -14,7 +16,8 @@ while (true)
         Console.WriteLine(@"Press '1' for plus (+)
 Press '2' for minus (-)
 Press '3' for multiplication (*)
-Press '4' for division (/)");
+Press '4' for division (/)
+Press 'e' for Exit (Close App)");
 
 
         string userinput = Console.ReadLine();
@@ -32,6 +35,10 @@ Press '4' for division (/)");
                 break;
             case "4":
                 Calculator.Divide(num1, num2);
+                break;
+            case "e":
+                Console.WriteLine("Thanx for using this app!");
+                isover = false;  
                 break;
             default:
                 Console.WriteLine("Wrong input!");
