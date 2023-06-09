@@ -129,6 +129,11 @@
   <ItemGroup>
     <ClCompile Include="Polymorphysm.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Equations.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Shapes.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
